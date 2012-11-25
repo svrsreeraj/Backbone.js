@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    </head>
+    <body>
+        <script type="text/template" id="list_template">
+            <div style="float: left;width: 150px;"><%= txt_name %></div>
+            <div style="float: left;width: 150px;"><%= txt_age %></div>
+            <div style="float: left;width: 150px;"><%= gender %></div>
+            <div style="float: left;width: 50px;"><a href="#edit/<%= index %>">Edit</a></div>
+            <div style="float: left;width: 50px;"><a href="#delete/<%= index %>">Delete</a></div>
+            <div style="clear: both; margin-bottom:20px; "></div>
+        </script>
+        <form id="id_frm_users">
+        <div id="contacts" style="width: 500px; float: left">
+            
+            <div><span>Name</span> : <input type="text" name="txt_name"></div>
+            <div><span>Age</span> : <input type="text" name="txt_age"></div>
+            <div><span>Country</span> : 
+                <select id="sel_id_country" name="sel_name_country"></select></div>
+            <div><span>Interests</span> : 
+                <select id="sel_id_interest" name="sel_name_interest"></select>
+            </div>
+            <div><span>Name</span> : 
+                <input type="radio" name="gender" value="male" checked="checked"> Male 
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div><span>Options</span> : 
+                <input type="checkbox" name="qualification" value="10th" checked="checked"> 10th 
+                <input type="checkbox" name="qualification" value="plus two"checked="checked"> Plus two
+                <input type="checkbox" name="qualification" value="degree" checked="checked"> Degree
+            </div>
+            <div><input type="button" name="btn_add" value="Save" id="id_btn"> </div>
+        </div>
+        <div style="width: 600px;float: left">
+            <div>
+                <div style="float: left;width: 150px;"><strong>Name</strong></div>
+                <div style="float: left;width: 150px;"><strong>Age</strong></div>
+                <div style="float: left;width: 150px;"><strong>Gender</strong></div>
+                <div style="clear: both;margin-bottom:10px;"></div>
+            </div>
+            <div id="id_list">
+
+            </div>
+        </div>
+        <script src="js_lib/jquery-1.8.2.min.js" type="text/javascript"></script>
+        <script src="js_lib/underscore.js" type="text/javascript"></script>
+        <script src="js_lib/backbone-min.js" type="text/javascript"></script>
+        <script src="js_lib/backBoneOverRides.js" type="text/javascript"></script>
+        <script src="myApp.js" type="text/javascript"></script>
+        </form>
+    </body>
+    
+</html>
