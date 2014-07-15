@@ -1,3 +1,11 @@
+ /**
+ * Backbone.js
+ *
+ * @author Sreeraj Vr <sreeraj.vr@gmail.com>
+ * @copyright 
+ * @license GNU AFFERO GENERAL PUBLIC LICENSE v3
+ */
+ 
  $(function() {
         var UserModel = Backbone.Model.extend({
             url : function()  {
